@@ -1,11 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    text-align: center;
-    background-color: #f0f0f0;
-    margin: 0;
-    padding: 0;
+
+/* Özel stiller */
+.bg-custom {
+    background-color: #000000;
 }
 
-h1 {
-    color: #333;
+.text-custom {
+    color: #000000;
+}
+
+.rounded-button {
+    border-radius: 8px;
 }

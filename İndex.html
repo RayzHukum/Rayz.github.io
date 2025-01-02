@@ -1,14 +1,86 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="tr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rayz's Website</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Çok Yakında | Web Sitemiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet"> <!-- Harici CSS dosyası -->
+    <script src="https://cdn.tailwindcss.com/3.4.5?plugins=forms@0.5.7,typography@0.5.13,aspect-ratio@0.4.2,container-queries@0.1.1"></script>
 </head>
-<body>
-    <h1>Merhaba, Bu Benim Sitem!</h1>
-    <p>GitHub Pages ile yayınladım.</p>
-    <script src="script.js"></script>
+<body class="bg-gray-50 min-h-screen flex flex-col">
+    <div class="flex-grow">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+            <div class="text-center">
+                <img src="assets/logo_placeholder.png" alt="Logo" class="h-16 mx-auto mb-8">
+                <div class="bg-white rounded-lg shadow-sm p-8 md:p-12 max-w-4xl mx-auto">
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Web Sitemiz Yapım Aşamasında</h1>
+                    <p class="text-xl text-gray-600 mb-8">Tahmini Yayın Tarihi: 1 Mart 2024</p>
+                    
+                    <div class="grid grid-cols-4 gap-4 mb-12" id="countdown">
+                        <div class="bg-custom text-white rounded-lg p-4">
+                            <div class="text-3xl font-bold mb-2" id="days">00</div>
+                            <div class="text-sm">Gün</div>
+                        </div>
+                        <div class="bg-custom text-white rounded-lg p-4">
+                            <div class="text-3xl font-bold mb-2" id="hours">00</div>
+                            <div class="text-sm">Saat</div>
+                        </div>
+                        <div class="bg-custom text-white rounded-lg p-4">
+                            <div class="text-3xl font-bold mb-2" id="minutes">00</div>
+                            <div class="text-sm">Dakika</div>
+                        </div>
+                        <div class="bg-custom text-white rounded-lg p-4">
+                            <div class="text-3xl font-bold mb-2" id="seconds">00</div>
+                            <div class="text-sm">Saniye</div>
+                        </div>
+                    </div>
+
+                    <div class="max-w-md mx-auto mb-12">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Bizimle İletişime Geçin</h3>
+                        <form class="space-y-4">
+                            <div>
+                                <input type="text" placeholder="Adınız" class="w-full rounded-lg border-gray-300 focus:border-custom focus:ring-custom">
+                            </div>
+                            <div>
+                                <input type="email" placeholder="E-posta Adresiniz" class="w-full rounded-lg border-gray-300 focus:border-custom focus:ring-custom">
+                            </div>
+                            <div>
+                                <textarea placeholder="Mesajınız" rows="4" class="w-full rounded-lg border-gray-300 focus:border-custom focus:ring-custom"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-custom text-white py-2 px-4 rounded-lg hover:bg-custom/90 transition-colors">Gönder</button>
+                        </form>
+                    </div>
+
+                    <div class="mb-12">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Bizi Takip Edin</h3>
+                        <div class="flex justify-center space-x-6">
+                            <a href="#" class="text-gray-600 hover:text-custom transition-colors"><i class="fab fa-facebook-f text-2xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-custom transition-colors"><i class="fab fa-twitter text-2xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-custom transition-colors"><i class="fab fa-instagram text-2xl"></i></a>
+                            <a href="#" class="text-gray-600 hover:text-custom transition-colors"><i class="fab fa-linkedin-in text-2xl"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="max-w-md mx-auto">
+                        <h3 class="text-lg font-semibold text-gray-900 mb-4">Haber Bülteni</h3>
+                        <form class="flex space-x-2">
+                            <input type="email" placeholder="E-posta adresiniz" class="flex-1 rounded-lg border-gray-300 focus:border-custom focus:ring-custom">
+                            <button type="submit" class="bg-custom text-white px-6 py-2 rounded-lg hover:bg-custom/90 transition-colors">Abone Ol</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-gray-100 py-6">
+        <div class="max-w-8xl mx-auto px-4 sm:px-6 lg:px-8">
+            <p class="text-center text-gray-600">&copy; 2024 Tüm hakları saklıdır.</p>
+        </div>
+    </footer>
+
+    <script src="js/scripts.js"></script> <!-- Harici JS dosyası -->
 </body>
 </html>
